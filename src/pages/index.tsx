@@ -11,12 +11,6 @@ import styles from "../styles/pages/Home.module.css"
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
 
-interface HomeProps {
-  level: number
-  currentExperience: number,
-  challengesCompleted: number
-}
-
 
 export default function Home(props) {
 
@@ -26,7 +20,7 @@ export default function Home(props) {
         <Head>
           <title>Início | move.it</title>
         </Head>
-        <ExperienceBar />
+        <ExperienceBar />        
         <CountdownProvider>
           <section>
             <div>

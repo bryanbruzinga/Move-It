@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { ChallengesContext } from "../contexts/ChallengesContext";
 import { CountdownContext } from "../contexts/CountdownContext";
 import styles from "../styles/components/ChallengeBox.module.css";
@@ -10,7 +10,7 @@ export function ChallengeBox() {
     completeChallenge,
   } = React.useContext(ChallengesContext);
 
-  const { resetCountdown } = useContext(CountdownContext);
+  const { resetCountdown } = React.useContext(CountdownContext);
 
   function handleChallengeSucceeded() {
     completeChallenge();
@@ -60,7 +60,7 @@ export function ChallengeBox() {
           </strong>
           <p>
             <img src="icons/level-up.svg" alt="Level Up" />
-            Avance de level completando os desafios.
+            Realize os exercícios para ganhar Xp e subir de nível.
           </p>
         </div>
       )}

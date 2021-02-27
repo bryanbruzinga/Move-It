@@ -70,3 +70,12 @@
     color: var(--text);
     cursor: not-allowed;
 }
+
+@media (max-width: 780px) {
+    .countdownContainer > div {
+        font-size: 3rem;
+    }
+    .countdownContainer > span {
+        font-size: 2rem;
+    }
+}
