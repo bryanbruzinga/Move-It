@@ -3,24 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --white: #fff;
     --background: #f2f3f5;
-    --gray-line: #dcdde0;
-    --text: #666;
-    --text-highlight: #b3b9ff;
-    --title: #2e384d;
-    --red: #e83f5b;
-    --green: #4cd62b;
-    --blue: #5965e0;
-    --blue-dark: #4953b8;
-    --blue-twitter: #2aa9e0;
-}
-
-.dark-mode:root {
-    --white: #fff;
-    --background: #2e384d;
     --gray-line: #dcdde0;
     --text: #666;
     --text-highlight: #b3b9ff;
@@ -61,3 +46,19 @@ a {
     text-decoration: none;
     color: inherit;
 }
+  
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgba(0, 0, 0, .9);
+      color: #f0ece2;
+    }
+  
+    h1, h2, strong, p {
+      color: #7579e7;
+    }
+  
+    img {
+      filter: brightness(0.9);
+    }
+  
+  }

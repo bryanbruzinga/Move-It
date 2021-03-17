@@ -77,7 +77,7 @@ export function ChallengesProvider({
     new Audio("/notification.mp3").play();
 
     if (Notification.permission === "granted") {
-      new Notification("Novo desafio 🎉", {
+      new Notification("Novo desafio disponível, bora desenferrujar o corpo 🏋️‍♂️", {
         body: `Valendo ${challenge.amount}xp!`,
       });
     }

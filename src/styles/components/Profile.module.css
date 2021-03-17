@@ -28,7 +28,8 @@
     margin-right: 0.5rem;
 }
 
-
-@media (max-width: 780px) {
-    
+@media (prefers-color-scheme: dark) {
+    .profileContainer div strong {
+        color: white;
+    }
 }
