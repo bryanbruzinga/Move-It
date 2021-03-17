@@ -6,8 +6,14 @@ export function LevelUpModal() {
 
     const { level, closeLevelUpModal } = React.useContext(ChallengesContext)
 
+    function handleModal({target, currentTarget}) {
+        if (target === currentTarget) {
+            closeLevelUpModal()
+        }
+    }
+
     return (
-        <div className={styles.overlay}>
+        <div className={styles.overlay} onClick={handleModal}>
             <div className={styles.container}>
                 <header>{level}</header>
                 <strong>Parabéns</strong>
