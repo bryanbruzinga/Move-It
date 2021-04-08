@@ -1,6 +1,6 @@
 .container {
     position: absolute;
-    width: 10rem;
+    width: 8rem;
     height: 100vh;
     background: linear-gradient(87deg, rgba(89,101,224,1) 0%, rgba(73,83,184,1) 58%);
 }
@@ -8,4 +8,6 @@
 .logoSidebar {
     width: 120px;
     height: 70px;
+    position: relative;
+    left: -0.8rem;
 }
